@@ -26,8 +26,8 @@ comp_check
 # Uncomment DYNLIB if you want libs installed to vendor for oreo+ and system for anything older
 # Uncomment SYSOVER if you want the mod to always be installed to system (even on magisk) - note that this can still be set to true by the user by adding 'sysover' to the zipname
 # Uncomment DEBUG if you want full debug logs (saved to /sdcard in magisk manager and the zip directory in twrp) - note that this can still be set to true by the user by adding 'debug' to the zipname
-#MINAPI=21
-#MAXAPI=25
+MINAPI=28
+MAXAPI=28
 #DYNLIB=true
 #SYSOVER=true
 #DEBUG=true
@@ -64,12 +64,13 @@ REPLACE="
 
 print_modname() {
   center_and_print # Replace this line if using custom print stuff
+  ui_print "    *******************************************"
+  ui_print "    * Module by @shadowstep at xda-developers *"
+  ui_print "    *******************************************"
   unity_main # Don't change this line
 }
 
 set_permissions() {
-  : # Remove this if adding to this function
-
   # Note that all files/folders have the $UNITY prefix - keep this prefix on all of your files/folders
   # Also note the lack of '/' between variables - preceding slashes are already included in the variables
   # Use $VEN for vendor (Do not use /system$VEN, the $VEN is set to proper vendor path already - could be /vendor, /system/vendor, etc.)
@@ -86,11 +87,16 @@ set_permissions() {
   # set_perm  <filename>                         <owner> <group> <permission> <contexts> (default: u:object_r:system_file:s0)
   
   # set_perm $UNITY/system/lib/libart.so 0 0 0644
+  set_perm $UNITY$VEN/lib/hw/camera.msm8998.so 0 0 0644
+  set_perm $UNITY$VEN/lib/libmmcamera_imx371.so 0 0 0644
+  set_perm $UNITY$VEN/lib/libmmcamera_imx398.so 0 0 0644
 }
 
 # Custom Variables for Install AND Uninstall - Keep everything within this function - runs before uninstall/install
 unity_custom() {
-  : # Remove this if adding to this function
+  if ! device_check "cheeseburger" && ! device_check "OnePlus5" && ! device_check "dumpling" && ! device_check "OnePlus5T"; then
+    abort "This mod is only intended to be used on OnePlus 5/5T. Aborting!"
+  fi
 }
 
 # Custom Functions for Install AND Uninstall - You can put them here
