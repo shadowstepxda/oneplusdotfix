@@ -21,33 +21,36 @@ This module replaces the necessary camera libraries with modified ones which fix
 - Remove the green hue from pictures taken on all Google Camera mods
 
 ### v1.4
-- Updated camera libraries from OxygenOS Open Beta 13 (Android Oreo)
+- Updated camera libraries from OxygenOS Open Beta 13/11 (Android Oreo)
 
 ### v1.5
 - Updated camera libraries from OxygenOS 5.1.4 (Android Oreo)
 
 ### v1.6
-- Updated camera libraries from OxygenOS Open Beta 15 (Android Oreo)
+- Updated camera libraries from OxygenOS Open Beta 15/13 (Android Oreo)
 
 ### v1.7
 - Update for Magisk v17.0
-- Updated camera libraries from OxygenOS Open Beta 16 (Android Oreo)
+- Updated camera libraries from OxygenOS Open Beta 16/14 (Android Oreo)
 
 ### v2.0
 - Fixed Front Camera Portrait Mode on the stock OxygenOS camera
-- Updated camera libraries from OxygenOS Open Beta 17 (Android Oreo)
+- Updated camera libraries from OxygenOS Open Beta 17/15 (Android Oreo)
 
 ### v2.1
-- Updated camera libraries from OxygenOS Open Beta 18 (Android Oreo)
+- Updated camera libraries from OxygenOS Open Beta 18/16 (Android Oreo)
 
 ### v2.2
-- Updated camera libraries from OxygenOS Open Beta 19 (Android Oreo)
+- Updated camera libraries from OxygenOS Open Beta 19/17 (Android Oreo)
 
 ### v3.0
-- Updated camera libraries from OxygenOS Open Beta 22 (Android Pie)
+- Updated camera libraries from OxygenOS Open Beta 22/20 (Android Pie)
 
 ### v4.0
 - Updated the zip base to the Unity Installer template
+
+### v4.1
+- Updated camera libraries from OxygenOS Open Beta 29/27 (Android Pie)
 
 ## Links
 * [GitHub](https://github.com/nipunnarang/oneplusdotfix)
