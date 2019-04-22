@@ -52,6 +52,9 @@ This module replaces the necessary camera libraries with modified ones which fix
 ### v4.1
 - Updated camera libraries from OxygenOS Open Beta 29/27 (Android Pie)
 
+### v4.2
+- Updated the front camera library to prevent pictures taken with the front camera from getting mirrored.
+
 ## Links
 * [GitHub](https://github.com/nipunnarang/oneplusdotfix)
 * [Support](https://forum.xda-developers.com/oneplus-5/themes/google-camera-hdr-t3655215)
