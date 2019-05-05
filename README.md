@@ -6,54 +6,58 @@ This module replaces the necessary camera libraries with modified ones which fix
 **Note:** The zip will abort the installation if you try to flash it on any other device except the OnePlus 5/5T and if you aren't running Android Pie (API 28).
 
 ## Changelog
-### v1.0
-- Initial release for Magisk v15.0
+###v4.3
+- Updated the base template to Unity v4.1
+- Introduce Volume Key Selector for selecting front camera library with or without the mirror fix
 
-### v1.1
-- Partially fixed OxygenOS's Face Unlock
-- Updated camera libraries from OxygenOS 5.1.2 (Android Oreo)
+### v4.2
+- Updated the front camera library to prevent pictures taken with the front camera from getting mirrored
 
-### v1.2
-- Completely fixed OxygenOS's Face Unlock
+### v4.1
+- Updated camera libraries from OxygenOS Open Beta 29/27 (Android Pie)
 
-### v1.3
-- Updated camera libraries from OxygenOS 5.1.3 (Android Oreo)
-- Remove the green hue from pictures taken on all Google Camera mods
+### v4.0
+- Updated the zip base to the Unity Installer template
 
-### v1.4
-- Updated camera libraries from OxygenOS Open Beta 13/11 (Android Oreo)
+### v3.0
+- Updated camera libraries from OxygenOS Open Beta 22/20 (Android Pie)
 
-### v1.5
-- Updated camera libraries from OxygenOS 5.1.4 (Android Oreo)
+### v2.2
+- Updated camera libraries from OxygenOS Open Beta 19/17 (Android Oreo)
 
-### v1.6
-- Updated camera libraries from OxygenOS Open Beta 15/13 (Android Oreo)
-
-### v1.7
-- Update for Magisk v17.0
-- Updated camera libraries from OxygenOS Open Beta 16/14 (Android Oreo)
+### v2.1
+- Updated camera libraries from OxygenOS Open Beta 18/16 (Android Oreo)
 
 ### v2.0
 - Fixed Front Camera Portrait Mode on the stock OxygenOS camera
 - Updated camera libraries from OxygenOS Open Beta 17/15 (Android Oreo)
 
-### v2.1
-- Updated camera libraries from OxygenOS Open Beta 18/16 (Android Oreo)
+### v1.7
+- Update for Magisk v17.0
+- Updated camera libraries from OxygenOS Open Beta 16/14 (Android Oreo)
 
-### v2.2
-- Updated camera libraries from OxygenOS Open Beta 19/17 (Android Oreo)
+### v1.6
+- Updated camera libraries from OxygenOS Open Beta 15/13 (Android Oreo)
 
-### v3.0
-- Updated camera libraries from OxygenOS Open Beta 22/20 (Android Pie)
+### v1.5
+- Updated camera libraries from OxygenOS 5.1.4 (Android Oreo)
 
-### v4.0
-- Updated the zip base to the Unity Installer template
+### v1.4
+- Updated camera libraries from OxygenOS Open Beta 13/11 (Android Oreo)
 
-### v4.1
-- Updated camera libraries from OxygenOS Open Beta 29/27 (Android Pie)
+### v1.3
+- Updated camera libraries from OxygenOS 5.1.3 (Android Oreo)
+- Remove the green hue from pictures taken on all Google Camera mods
 
-### v4.2
-- Updated the front camera library to prevent pictures taken with the front camera from getting mirrored.
+### v1.2
+- Completely fixed OxygenOS's Face Unlock
+
+### v1.1
+- Partially fixed OxygenOS's Face Unlock
+- Updated camera libraries from OxygenOS 5.1.2 (Android Oreo)
+
+### v1.0
+- Initial release for Magisk v15.0
 
 ## Links
 * [GitHub](https://github.com/nipunnarang/oneplusdotfix)
