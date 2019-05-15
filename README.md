@@ -6,6 +6,11 @@ This module replaces the necessary camera libraries with modified ones which fix
 **Note:** The zip will abort the installation if you try to flash it on any other device except the OnePlus 5/5T and if you aren't running Android Pie (API 28).
 
 ## Changelog
+### v4.4
+- Fix viewfinder lag
+- Remove front camera library with the mirror fix
+- Remove Volume Key Selector
+
 ### v4.3
 - Updated the base template to Unity v4.1
 - Introduce Volume Key Selector for selecting front camera library with or without the mirror fix
