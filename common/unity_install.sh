@@ -6,7 +6,7 @@ if device_check "cheeseburger" || device_check "OnePlus5"; then
   ui_print "- Copying appropriate libraries"
   ui_print " "
   cp -f $TMPDIR/libs/cheeseburger/camera.msm8998.so $TMPDIR/system/vendor/lib/hw/camera.msm8998.so
-  cp -f $TMPDIR/libs/cheeseburger/libmmcamera_imx371.so $TMPDIR/system/vendor/lib/hw/libmmcamera_imx371.so
+  cp -f $TMPDIR/libs/cheeseburger/libmmcamera_imx371.so $TMPDIR/system/vendor/lib/libmmcamera_imx371.so
   cp -f $TMPDIR/libs/cheeseburger/libmmcamera_imx398.so $TMPDIR/system/vendor/lib/libmmcamera_imx398.so
 else
   ui_print " "
@@ -15,6 +15,6 @@ else
   ui_print "- Copying appropriate libraries"
   ui_print " "
   cp -f $TMPDIR/libs/dumpling/camera.msm8998.so $TMPDIR/system/vendor/lib/hw/camera.msm8998.so
-  cp -f $TMPDIR/libs/dumpling/libmmcamera_imx371.so $TMPDIR/system/vendor/lib/hw/libmmcamera_imx371.so
+  cp -f $TMPDIR/libs/dumpling/libmmcamera_imx371.so $TMPDIR/system/vendor/lib/libmmcamera_imx371.so
   cp -f $TMPDIR/libs/dumpling/libmmcamera_imx398.so $TMPDIR/system/vendor/lib/libmmcamera_imx398.so
 fi
