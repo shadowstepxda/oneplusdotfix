@@ -1,11 +1,16 @@
-# OnePlus 5/5T DotFix [![Magisk](https://img.shields.io/badge/Magisk-19%2B-00B39B.svg?style=flat-square)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445) [![Forum](https://img.shields.io/badge/XDA-Forums-f59714.svg?style=flat-square)](https://forum.xda-developers.com/oneplus-5/themes/google-camera-hdr-t3655215)
+# OnePlus 5/5T DotFix [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg?style=flat-square)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445) [![Forum](https://img.shields.io/badge/XDA-Forums-f59714.svg?style=flat-square)](https://forum.xda-developers.com/oneplus-5/themes/google-camera-hdr-t3655215)
 
 ## Information
-This module replaces the necessary camera libraries with modified ones which fix the Dotted Pattern Overlay issue, Front Camera HDR-Enhanced as well as Portrait Mode using the Google Camera Mod on the OnePlus 5/5T. The module will automatically install the correct modified libraries based on the device detected (OnePlus 5/5T). In case you wish to install the modified libraries directly in the vendor partition and not as a Magisk module, then add "sysover" (without the quotes) to the zip name and flash it via TWRP.
+This module replaces the necessary camera libraries with modified ones which fix the Dotted Pattern Overlay issue, Front Camera HDR-Enhanced as well as Portrait Mode using the Google Camera Mod on the OnePlus 5/5T. The module will automatically install the correct modified libraries based on the device and Android version detected (OnePlus 5/5T). In case you wish to install the modified libraries directly in the system/vendor partition and not as a Magisk module, then add "sysover" (without the quotes) to the zip name and flash it via TWRP.
 
-**Note:** The zip will abort the installation if you try to flash it on any other device except the OnePlus 5/5T and if you aren't running Android Pie (API 28).
+**Note:** The zip will abort the installation if you try to flash it on any other device except the OnePlus 5/5T and if you aren't running Android Nougat, Oreo or Pie (API 25-28).
 
 ## Changelog
+### v5.0
+- Added support for OxygenOS based on Android Nougat and Oreo
+- Updated camera libraries from OxygenOS 9.0.5 (Android Pie)
+- Updated the base template to Unity v4.2
+
 ### v4.4
 - Fix viewfinder lag
 - Remove front camera library with the mirror fix
