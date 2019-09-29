@@ -27,7 +27,7 @@ comp_check
 # Uncomment SYSOVER if you want the mod to always be installed to system (even on magisk) - note that this can still be set to true by the user by adding 'sysover' to the zipname
 # Uncomment DEBUG if you want full debug logs (saved to /sdcard in magisk manager and the zip directory in twrp) - note that this can still be set to true by the user by adding 'debug' to the zipname
 MINAPI=25
-MAXAPI=28
+MAXAPI=29
 #DYNLIB=true
 #SYSOVER=true
 DEBUG=true

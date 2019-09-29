@@ -3,9 +3,13 @@
 ## Information
 This module replaces the necessary camera libraries with modified ones which fix the Dotted Pattern Overlay issue, Front Camera HDR-Enhanced as well as Portrait Mode using the Google Camera Mod on the OnePlus 5/5T. The module will automatically install the correct modified libraries based on the device and Android version detected (OnePlus 5/5T). In case you wish to install the modified libraries directly in the system/vendor partition and not as a Magisk module, then add "sysover" (without the quotes) to the zip name and flash it via TWRP.
 
-**Note:** The zip will abort the installation if you try to flash it on any other device except the OnePlus 5/5T and if you aren't running Android Nougat, Oreo or Pie (API 25-28).
+**Note:** The zip will abort the installation if you try to flash it on any other device except the OnePlus 5/5T and if you aren't running Android 7.1, 8.0, 8.1, 9.0 or 10.0 (API 25-29).
 
 ## Changelog
+### v5.1
+- Added support for Android 10
+- Updated the base template to Unity v4.4
+
 ### v5.0
 - Added support for OxygenOS based on Android Nougat and Oreo
 - Updated camera libraries from OxygenOS 9.0.5 (Android Pie)
