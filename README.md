@@ -1,11 +1,14 @@
-# OnePlus 5/5T DotFix [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg?style=flat-square)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445) [![Forum](https://img.shields.io/badge/XDA-Forums-f59714.svg?style=flat-square)](https://forum.xda-developers.com/oneplus-5/themes/google-camera-hdr-t3655215)
+# OnePlus 5/5T DotFix [![XDA Forum](https://img.shields.io/badge/XDA-Forum-F59812.svg?style=flat-square)](https://forum.xda-developers.com/oneplus-5/themes/google-camera-hdr-t3655215) [![Telegram Group](https://img.shields.io/badge/Telegram-Group-1F95D4.svg?style=flat-square)](https://t.me/gcamOneplus)
 
 ## Information
-This module replaces the necessary camera libraries with modified ones which fix the Dotted Pattern Overlay issue, Front Camera HDR-Enhanced as well as Portrait Mode using the Google Camera Mod on the OnePlus 5/5T. The module will automatically install the correct modified libraries based on the device and Android version detected (OnePlus 5/5T). In case you wish to install the modified libraries directly in the system/vendor partition and not as a Magisk module, then add "sysover" (without the quotes) to the zip name and flash it via TWRP.
+This module replaces the necessary camera libraries with modified ones which fix the Dotted Pattern Overlay issue, Front Camera HDR-Enhanced as well as Portrait Mode using the Google Camera Mod on the OnePlus 5/5T. The module will automatically install the correct modified libraries based on the device and Android version detected.
 
 **Note:** The zip will abort the installation if you try to flash it on any other device except the OnePlus 5/5T and if you aren't running Android 7.1, 8.0, 8.1, 9.0 or 10.0 (API 25-29).
 
 ## Changelog
+### v5.2
+- Updated the base template to MMT-Ex v1.1
+
 ### v5.1
 - Added support for Android 10
 - Updated the base template to Unity v4.4
@@ -74,6 +77,6 @@ This module replaces the necessary camera libraries with modified ones which fix
 - Initial release for Magisk v15.0
 
 ## Links
-* [GitHub](https://github.com/nipunnarang/oneplusdotfix)
-* [Support](https://forum.xda-developers.com/oneplus-5/themes/google-camera-hdr-t3655215)
-* [Unity](https://github.com/Zackptg5/Unity)
+* [GitHub](https://github.com/Magisk-Modules-Repo/oneplusdotfix)
+* [Support](https://t.me/gcamOneplus)
+* [MMT-Ex](https://github.com/Zackptg5/MMT-Extended)
