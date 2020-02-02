@@ -10,7 +10,7 @@ if device_check "cheeseburger" || device_check "OnePlus5"; then
     ui_print " "
     cp_ch $MODPATH/common/libs/cheeseburger/api25/camera.msm8998.so $MODPATH/system/vendor/lib/hw/camera.msm8998.so
     cp_ch $MODPATH/common/libs/cheeseburger/api25/libmmcamera_imx350.so $MODPATH/system/vendor/lib/libmmcamera_imx350.so
-	cp_ch $MODPATH/common/libs/cheeseburger/api25/libmmcamera_imx371.so $MODPATH/system/vendor/lib/libmmcamera_imx371.so
+    cp_ch $MODPATH/common/libs/cheeseburger/api25/libmmcamera_imx371.so $MODPATH/system/vendor/lib/libmmcamera_imx371.so
     cp_ch $MODPATH/common/libs/cheeseburger/api25/libmmcamera_imx398.so $MODPATH/system/vendor/lib/libmmcamera_imx398.so
   elif [ $API -eq 26 ]; then
     ui_print " "
@@ -21,7 +21,7 @@ if device_check "cheeseburger" || device_check "OnePlus5"; then
     cp_ch $MODPATH/common/libs/cheeseburger/api26/camera.msm8998.so $MODPATH/system/vendor/lib/hw/camera.msm8998.so
     cp_ch $MODPATH/common/libs/cheeseburger/api26/libmmcamera_imx350.so $MODPATH/system/vendor/lib/libmmcamera_imx350.so
     cp_ch $MODPATH/common/libs/unified/api26/libmmcamera_imx371.so $MODPATH/system/vendor/lib/libmmcamera_imx371.so
-	cp_ch $MODPATH/common/libs/cheeseburger/api26/libmmcamera_imx398.so $MODPATH/system/vendor/lib/libmmcamera_imx398.so
+    cp_ch $MODPATH/common/libs/cheeseburger/api26/libmmcamera_imx398.so $MODPATH/system/vendor/lib/libmmcamera_imx398.so
   elif [ $API -eq 27 ]; then
     ui_print " "
     ui_print "- Android detected: Oreo (8.1)"
@@ -30,7 +30,7 @@ if device_check "cheeseburger" || device_check "OnePlus5"; then
     ui_print " "
     cp_ch $MODPATH/common/libs/cheeseburger/api27/camera.msm8998.so $MODPATH/system/vendor/lib/hw/camera.msm8998.so
     cp_ch $MODPATH/common/libs/cheeseburger/api27/libmmcamera_imx350.so $MODPATH/system/vendor/lib/libmmcamera_imx350.so
-	cp_ch $MODPATH/common/libs/unified/api27/libmmcamera_imx371.so $MODPATH/system/vendor/lib/libmmcamera_imx371.so
+    cp_ch $MODPATH/common/libs/unified/api27/libmmcamera_imx371.so $MODPATH/system/vendor/lib/libmmcamera_imx371.so
     cp_ch $MODPATH/common/libs/cheeseburger/api27/libmmcamera_imx398.so $MODPATH/system/vendor/lib/libmmcamera_imx398.so
   elif [ $API -eq 28 ]; then
     ui_print " "
@@ -39,7 +39,7 @@ if device_check "cheeseburger" || device_check "OnePlus5"; then
     ui_print "- Copying appropriate libraries"
     ui_print " "
     cp_ch $MODPATH/common/libs/cheeseburger/api28-29/camera.msm8998.so $MODPATH/system/vendor/lib/hw/camera.msm8998.so
-	cp_ch $MODPATH/common/libs/cheeseburger/api28-29/libmmcamera_imx350.so $MODPATH/system/vendor/lib/libmmcamera_imx350.so
+    cp_ch $MODPATH/common/libs/cheeseburger/api28-29/libmmcamera_imx350.so $MODPATH/system/vendor/lib/libmmcamera_imx350.so
     cp_ch $MODPATH/common/libs/unified/api28-29/libmmcamera_imx371.so $MODPATH/system/vendor/lib/libmmcamera_imx371.so
     cp_ch $MODPATH/common/libs/cheeseburger/api28-29/libmmcamera_imx398.so $MODPATH/system/vendor/lib/libmmcamera_imx398.so
   else
@@ -50,7 +50,7 @@ if device_check "cheeseburger" || device_check "OnePlus5"; then
     ui_print " "
     cp_ch $MODPATH/common/libs/cheeseburger/api28-29/camera.msm8998.so $MODPATH/system/vendor/lib/hw/camera.msm8998.so
     cp_ch $MODPATH/common/libs/cheeseburger/api28-29/libmmcamera_imx350.so $MODPATH/system/vendor/lib/libmmcamera_imx350.so
-	cp_ch $MODPATH/common/libs/unified/api28-29/libmmcamera_imx371.so $MODPATH/system/vendor/lib/libmmcamera_imx371.so
+    cp_ch $MODPATH/common/libs/unified/api28-29/libmmcamera_imx371.so $MODPATH/system/vendor/lib/libmmcamera_imx371.so
     cp_ch $MODPATH/common/libs/cheeseburger/api28-29/libmmcamera_imx398.so $MODPATH/system/vendor/lib/libmmcamera_imx398.so
   fi
 elif device_check "dumpling" || device_check "OnePlus5T"; then
@@ -65,7 +65,7 @@ elif device_check "dumpling" || device_check "OnePlus5T"; then
     cp_ch $MODPATH/common/libs/dumpling/api25/camera.msm8998.so $MODPATH/system/vendor/lib/hw/camera.msm8998.so
     cp_ch $MODPATH/common/libs/dumpling/api25/libmmcamera_imx371.so $MODPATH/system/vendor/lib/libmmcamera_imx371.so
     cp_ch $MODPATH/common/libs/dumpling/api25/libmmcamera_imx376k.so $MODPATH/system/vendor/lib/libmmcamera_imx376k.so
-	cp_ch $MODPATH/common/libs/dumpling/api25/libmmcamera_imx398.so $MODPATH/system/vendor/lib/libmmcamera_imx398.so
+    cp_ch $MODPATH/common/libs/dumpling/api25/libmmcamera_imx398.so $MODPATH/system/vendor/lib/libmmcamera_imx398.so
   elif [ $API -eq 26 ]; then
     ui_print " "
     ui_print "- Android detected: Oreo (8.0)"
@@ -74,7 +74,7 @@ elif device_check "dumpling" || device_check "OnePlus5T"; then
     ui_print " "
     cp_ch $MODPATH/common/libs/dumpling/api26/camera.msm8998.so $MODPATH/system/vendor/lib/hw/camera.msm8998.so
     cp_ch $MODPATH/common/libs/unified/api26/libmmcamera_imx371.so $MODPATH/system/vendor/lib/libmmcamera_imx371.so
-	cp_ch $MODPATH/common/libs/dumpling/api26/libmmcamera_imx376k.so $MODPATH/system/vendor/lib/libmmcamera_imx376k.so
+    cp_ch $MODPATH/common/libs/dumpling/api26/libmmcamera_imx376k.so $MODPATH/system/vendor/lib/libmmcamera_imx376k.so
     cp_ch $MODPATH/common/libs/dumpling/api26/libmmcamera_imx398.so $MODPATH/system/vendor/lib/libmmcamera_imx398.so
   elif [ $API -eq 27 ]; then
     ui_print " "
@@ -84,7 +84,7 @@ elif device_check "dumpling" || device_check "OnePlus5T"; then
     ui_print " "
     cp_ch $MODPATH/common/libs/dumpling/api27/camera.msm8998.so $MODPATH/system/vendor/lib/hw/camera.msm8998.so
     cp_ch $MODPATH/common/libs/unified/api27/libmmcamera_imx371.so $MODPATH/system/vendor/lib/libmmcamera_imx371.so
-	cp_ch $MODPATH/common/libs/dumpling/api27/libmmcamera_imx376k.so $MODPATH/system/vendor/lib/libmmcamera_imx376k.so
+    cp_ch $MODPATH/common/libs/dumpling/api27/libmmcamera_imx376k.so $MODPATH/system/vendor/lib/libmmcamera_imx376k.so
     cp_ch $MODPATH/common/libs/dumpling/api27/libmmcamera_imx398.so $MODPATH/system/vendor/lib/libmmcamera_imx398.so
   elif [ $API -eq 28 ]; then
     ui_print " "
@@ -93,7 +93,7 @@ elif device_check "dumpling" || device_check "OnePlus5T"; then
     ui_print "- Copying appropriate libraries"
     ui_print " "
     cp_ch $MODPATH/common/libs/dumpling/api28-29/camera.msm8998.so $MODPATH/system/vendor/lib/hw/camera.msm8998.so
-	cp_ch $MODPATH/common/libs/unified/api28-29/libmmcamera_imx371.so $MODPATH/system/vendor/lib/libmmcamera_imx371.so
+    cp_ch $MODPATH/common/libs/unified/api28-29/libmmcamera_imx371.so $MODPATH/system/vendor/lib/libmmcamera_imx371.so
     cp_ch $MODPATH/common/libs/dumpling/api28-29/libmmcamera_imx376k.so $MODPATH/system/vendor/lib/libmmcamera_imx376k.so
     cp_ch $MODPATH/common/libs/dumpling/api28-29/libmmcamera_imx398.so $MODPATH/system/vendor/lib/libmmcamera_imx398.so
   else
@@ -103,7 +103,7 @@ elif device_check "dumpling" || device_check "OnePlus5T"; then
     ui_print "- Copying appropriate libraries"
     ui_print " "
     cp_ch $MODPATH/common/libs/dumpling/api28-29/camera.msm8998.so $MODPATH/system/vendor/lib/hw/camera.msm8998.so
-	cp_ch $MODPATH/common/libs/unified/api28-29/libmmcamera_imx371.so $MODPATH/system/vendor/lib/libmmcamera_imx371.so
+    cp_ch $MODPATH/common/libs/unified/api28-29/libmmcamera_imx371.so $MODPATH/system/vendor/lib/libmmcamera_imx371.so
     cp_ch $MODPATH/common/libs/dumpling/api28-29/libmmcamera_imx376k.so $MODPATH/system/vendor/lib/libmmcamera_imx376k.so
     cp_ch $MODPATH/common/libs/dumpling/api28-29/libmmcamera_imx398.so $MODPATH/system/vendor/lib/libmmcamera_imx398.so
   fi
