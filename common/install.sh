@@ -107,7 +107,9 @@ elif device_check "dumpling" || device_check "OnePlus5T"; then
     cp_ch $MODPATH/common/libs/dumpling/api28-29/libmmcamera_imx376k.so $MODPATH/system/vendor/lib/libmmcamera_imx376k.so
     cp_ch $MODPATH/common/libs/dumpling/api28-29/libmmcamera_imx398.so $MODPATH/system/vendor/lib/libmmcamera_imx398.so
   fi
-else abort "DEVICE ERROR: This module is only for the OnePlus 5/5T. Aborting!"
+else
+  ui_print " "
+  abort "! DEVICE ERROR: This module is only for OnePlus 5/5T"
 fi
 
 # Remove stuff that doesn't belong in the module directory
