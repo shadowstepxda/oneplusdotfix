@@ -6,6 +6,10 @@ This module replaces the necessary camera libraries with modified ones which fix
 **Note:** The zip will abort the installation if you try to flash it on any other device except the OnePlus 5/5T and if you aren't running Android 7.1, 8.0, 8.1, 9.0 or 10.0 (API 25-29).
 
 ## Changelog
+### v5.4
+- Updated camera libraries from leaked HydrogenOS 10.0 DP2
+- Updated the base template to MMT-Ex v1.5
+
 ### v5.3
 - Updated camera libraries from OxygenOS 9.0.10 (Android Pie)
 - Added two new modified camera libraries for IMX350 and IMX376K
