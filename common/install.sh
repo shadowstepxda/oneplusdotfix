@@ -9,6 +9,9 @@ IMX376K=libmmcamera_imx376k.so
 IMX398=libmmcamera_imx398.so
 MSM8998=camera.msm8998.so
 
+# Extract compressed libraries
+tar -xf $MODPATH/common/libs.tar.xz -C $MODPATH/common 2>/dev/null
+
 # Copy appropriate libraries based on detected device and API level
 if device_check "cheeseburger" || device_check "OnePlus5"; then
   ui_print " "
@@ -58,6 +61,9 @@ if device_check "cheeseburger" || device_check "OnePlus5"; then
     cp_ch $CHEESELIB/$API/$IMX350 $VENLIB/$IMX350
     cp_ch $UNILIB/$API/$IMX371 $VENLIB/$IMX371
     cp_ch $CHEESELIB/$API/$IMX398 $VENLIB/$IMX398
+    ui_print " "
+    ui_print "- Adding service to fix some conflicting props"
+    mv -f $MODPATH/common/service.sh $MODPATH/service.sh
   fi
 elif device_check "dumpling" || device_check "OnePlus5T"; then
   ui_print " "
@@ -107,6 +113,9 @@ elif device_check "dumpling" || device_check "OnePlus5T"; then
     cp_ch $UNILIB/$API/$IMX371 $VENLIB/$IMX371
     cp_ch $DUMPLIB/$API/$IMX376K $VENLIB/$IMX376K
     cp_ch $DUMPLIB/$API/$IMX398 $VENLIB/$IMX398
+    ui_print " "
+    ui_print "- Adding service to fix some conflicting props"
+    mv -f $MODPATH/common/service.sh $MODPATH/service.sh
   fi
 else
   ui_print " "
