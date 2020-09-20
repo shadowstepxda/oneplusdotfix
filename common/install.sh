@@ -12,116 +12,100 @@ MSM8998=camera.msm8998.so
 # Extract compressed libraries
 tar -xf $MODPATH/common/libs.tar.xz -C $MODPATH/common 2>/dev/null
 
-# Copy appropriate libraries based on detected device and API level
+# Copy modified libraries based on the detected device and Android version
 if device_check "cheeseburger" || device_check "OnePlus5"; then
-  ui_print " "
   ui_print "- Device detected: OnePlus 5 (cheeseburger)"
   if [ $API -eq 25 ]; then
-    ui_print " "
-    ui_print "- Android detected: Nougat (7.1)"
-    ui_print " "
-    ui_print "- Copying appropriate libraries"
+    ui_print "- Android version detected: 7.1"
+    ui_print "- Copying modified libraries"
     cp_ch $CHEESELIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
     cp_ch $CHEESELIB/$API/$IMX350 $VENLIB/$IMX350
     cp_ch $CHEESELIB/$API/$IMX371 $VENLIB/$IMX371
     cp_ch $CHEESELIB/$API/$IMX398 $VENLIB/$IMX398
   elif [ $API -eq 26 ]; then
-    ui_print " "
-    ui_print "- Android detected: Oreo (8.0)"
-    ui_print " "
-    ui_print "- Copying appropriate libraries"
+    ui_print "- Android version detected: 8.0"
+    ui_print "- Copying modified libraries"
     cp_ch $CHEESELIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
     cp_ch $CHEESELIB/$API/$IMX350 $VENLIB/$IMX350
     cp_ch $UNILIB/$API/$IMX371 $VENLIB/$IMX371
     cp_ch $CHEESELIB/$API/$IMX398 $VENLIB/$IMX398
   elif [ $API -eq 27 ]; then
-    ui_print " "
-    ui_print "- Android detected: Oreo (8.1)"
-    ui_print " "
-    ui_print "- Copying appropriate libraries"
+    ui_print "- Android version detected: 8.1"
+    ui_print "- Copying modified libraries"
     cp_ch $CHEESELIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
     cp_ch $CHEESELIB/$API/$IMX350 $VENLIB/$IMX350
     cp_ch $UNILIB/$API/$IMX371 $VENLIB/$IMX371
     cp_ch $CHEESELIB/$API/$IMX398 $VENLIB/$IMX398
   elif [ $API -eq 28 ]; then
-    ui_print " "
-    ui_print "- Android detected: Pie (9.0)"
-    ui_print " "
-    ui_print "- Copying appropriate libraries"
+    ui_print "- Android version detected: 9.0"
+    ui_print "- Copying modified libraries"
+    cp_ch $CHEESELIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
+    cp_ch $CHEESELIB/$API/$IMX350 $VENLIB/$IMX350
+    cp_ch $UNILIB/$API/$IMX371 $VENLIB/$IMX371
+    cp_ch $CHEESELIB/$API/$IMX398 $VENLIB/$IMX398
+  elif [ $API -eq 29 ]; then
+    ui_print "- Android version detected: 10.0"
+    ui_print "- Copying modified libraries"
     cp_ch $CHEESELIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
     cp_ch $CHEESELIB/$API/$IMX350 $VENLIB/$IMX350
     cp_ch $UNILIB/$API/$IMX371 $VENLIB/$IMX371
     cp_ch $CHEESELIB/$API/$IMX398 $VENLIB/$IMX398
   else
-    ui_print " "
-    ui_print "- Android detected: Q (10.0)"
-    ui_print " "
-    ui_print "- Copying appropriate libraries"
-    cp_ch $CHEESELIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
-    cp_ch $CHEESELIB/$API/$IMX350 $VENLIB/$IMX350
-    cp_ch $UNILIB/$API/$IMX371 $VENLIB/$IMX371
-    cp_ch $CHEESELIB/$API/$IMX398 $VENLIB/$IMX398
-    ui_print " "
-    ui_print "- Adding service to fix some conflicting props"
-    mv -f $MODPATH/common/service.sh $MODPATH/service.sh
+    ui_print "- Android version detected: 11.0"
+    ui_print "- Copying modified libraries"
+    cp_ch $CHEESELIB/29/$MSM8998 $VENLIB/hw/$MSM8998
+    cp_ch $CHEESELIB/29/$IMX350 $VENLIB/$IMX350
+    cp_ch $UNILIB/29/$IMX371 $VENLIB/$IMX371
+    cp_ch $CHEESELIB/29/$IMX398 $VENLIB/$IMX398
   fi
 elif device_check "dumpling" || device_check "OnePlus5T"; then
-  ui_print " "
   ui_print "- Device detected: OnePlus 5T (dumpling)"
   if [ $API -eq 25 ]; then
-    ui_print " "
-    ui_print "- Android detected: Nougat (7.1)"
-    ui_print " "
-    ui_print "- Copying appropriate libraries"
+    ui_print "- Android version detected: 7.1"
+    ui_print "- Copying modified libraries"
     cp_ch $DUMPLIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
     cp_ch $DUMPLIB/$API/$IMX371 $VENLIB/$IMX371
     cp_ch $DUMPLIB/$API/$IMX376K $VENLIB/$IMX376K
     cp_ch $DUMPLIB/$API/$IMX398 $VENLIB/$IMX398
   elif [ $API -eq 26 ]; then
-    ui_print " "
-    ui_print "- Android detected: Oreo (8.0)"
-    ui_print " "
-    ui_print "- Copying appropriate libraries"
+    ui_print "- Android version detected: 8.0"
+    ui_print "- Copying modified libraries"
     cp_ch $DUMPLIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
     cp_ch $UNILIB/$API/$IMX371 $VENLIB/$IMX371
     cp_ch $DUMPLIB/$API/$IMX376K $VENLIB/$IMX376K
     cp_ch $DUMPLIB/$API/$IMX398 $VENLIB/$IMX398
   elif [ $API -eq 27 ]; then
-    ui_print " "
-    ui_print "- Android detected: Oreo (8.1)"
-    ui_print " "
-    ui_print "- Copying appropriate libraries"
+    ui_print "- Android version detected: 8.1"
+    ui_print "- Copying modified libraries"
     cp_ch $DUMPLIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
     cp_ch $UNILIB/$API/$IMX371 $VENLIB/$IMX371
     cp_ch $DUMPLIB/$API/$IMX376K $VENLIB/$IMX376K
     cp_ch $DUMPLIB/$API/$IMX398 $VENLIB/$IMX398
   elif [ $API -eq 28 ]; then
-    ui_print " "
-    ui_print "- Android detected: Pie (9.0)"
-    ui_print " "
-    ui_print "- Copying appropriate libraries"
+    ui_print "- Android version detected: 9.0"
+    ui_print "- Copying modified libraries"
+    cp_ch $DUMPLIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
+    cp_ch $UNILIB/$API/$IMX371 $VENLIB/$IMX371
+    cp_ch $DUMPLIB/$API/$IMX376K $VENLIB/$IMX376K
+    cp_ch $DUMPLIB/$API/$IMX398 $VENLIB/$IMX398
+  elif [ $API -eq 29 ]; then
+    ui_print "- Android version detected: 10.0"
+    ui_print "- Copying modified libraries"
     cp_ch $DUMPLIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
     cp_ch $UNILIB/$API/$IMX371 $VENLIB/$IMX371
     cp_ch $DUMPLIB/$API/$IMX376K $VENLIB/$IMX376K
     cp_ch $DUMPLIB/$API/$IMX398 $VENLIB/$IMX398
   else
-    ui_print " "
-    ui_print "- Android detected: Q (10.0)"
-    ui_print " "
-    ui_print "- Copying appropriate libraries"
-    cp_ch $DUMPLIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
-    cp_ch $UNILIB/$API/$IMX371 $VENLIB/$IMX371
-    cp_ch $DUMPLIB/$API/$IMX376K $VENLIB/$IMX376K
-    cp_ch $DUMPLIB/$API/$IMX398 $VENLIB/$IMX398
-    ui_print " "
-    ui_print "- Adding service to fix some conflicting props"
-    mv -f $MODPATH/common/service.sh $MODPATH/service.sh
+    ui_print "- Android version detected: 11.0"
+    ui_print "- Copying modified libraries"
+    cp_ch $DUMPLIB/29/$MSM8998 $VENLIB/hw/$MSM8998
+    cp_ch $UNILIB/29/$IMX371 $VENLIB/$IMX371
+    cp_ch $DUMPLIB/29/$IMX376K $VENLIB/$IMX376K
+    cp_ch $DUMPLIB/29/$IMX398 $VENLIB/$IMX398
   fi
 else
-  ui_print " "
   abort "! DEVICE ERROR: This module is only for OnePlus 5/5T"
 fi
 
 # Remove stuff that doesn't belong in the module directory
-ui_print " "
 rm $MODPATH/LICENSE
