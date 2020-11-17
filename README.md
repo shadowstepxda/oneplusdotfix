@@ -3,9 +3,12 @@
 ## Information
 This module replaces the necessary camera libraries with modified ones which fix the Dotted Pattern Overlay issue, Front Camera HDR-Enhanced as well as Portrait Mode using the Google Camera Mod on the OnePlus 5/5T. The module will automatically install the correct modified libraries based on the device and Android version detected.
 
-**Note:** The zip will abort the installation if you try to flash it on any other device except the OnePlus 5/5T and if you aren't running Android 7.1, 8.0, 8.1, 9.0, 10.0 or 11.0 (API 25-30).
+**Note:** The zip will abort the installation if you try to flash it on any other device except the OnePlus 5/5T and if you aren't running Android 7.1-11.0 (API 25-30).
 
 ## Changelog
+### v6.0
+- Updated camera libraries from OxygenOS 10.0.1
+
 ### v5.7
 - Added support for Android 11
 - Updated the base template to MMT-Ex v1.6

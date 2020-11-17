@@ -1,7 +1,7 @@
 id=oneplusdotfix
 name=OnePlus 5/5T DotFix
-version=v5.7
-versionCode=5700
+version=v6.0
+versionCode=6000
 author=@Arnova8G2, @defcomg, @MrAimenify, and @shadowstep
 description=This module replaces the necessary camera libraries with modified ones which fix the Dotted Pattern Overlay issue, Front Camera HDR-Enhanced as well as Portrait Mode using the Google Camera Mod on the OnePlus 5/5T
 support=https://t.me/gcamOneplus
