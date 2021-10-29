@@ -6,6 +6,10 @@ This module replaces the necessary camera libraries with modified ones which fix
 **Note:** The zip will abort the installation if you try to flash it on any other device except the OnePlus 5/5T and if you aren't running Android 7.1-11.0 (API 25-30).
 
 ## Changelog
+### v6.1
+- Added support for Android 12
+- Updated the base template to MMT-Ex v1.7
+
 ### v6.0
 - Updated camera libraries from OxygenOS 10.0.1
 
