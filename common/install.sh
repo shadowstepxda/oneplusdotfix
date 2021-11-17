@@ -18,10 +18,15 @@ if device_check "cheeseburger" || device_check "OnePlus5"; then
   ui_print "- API version detected: $API"
   ui_print "- Copying modified libraries"
   ui_print " "
-  if [ $API -eq 25 ] || [ $API -eq 26 ] || [ $API -eq 27 ] || [ $API -eq 28 ]; then
+  if [ $API -eq 25 ]; then
     cp_ch $CHEESELIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
     cp_ch $CHEESELIB/$API/$IMX350 $VENLIB/$IMX350
     cp_ch $CHEESELIB/$API/$IMX371 $VENLIB/$IMX371
+    cp_ch $CHEESELIB/$API/$IMX398 $VENLIB/$IMX398
+  elif [ $API -eq 26 ] || [ $API -eq 27 ] || [ $API -eq 28 ]; then
+    cp_ch $CHEESELIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
+    cp_ch $CHEESELIB/$API/$IMX350 $VENLIB/$IMX350
+    cp_ch $UNILIB/$API/$IMX371 $VENLIB/$IMX371
     cp_ch $CHEESELIB/$API/$IMX398 $VENLIB/$IMX398
   else
     cp_ch $CHEESELIB/29/$MSM8998 $VENLIB/hw/$MSM8998
@@ -34,9 +39,14 @@ elif device_check "dumpling" || device_check "OnePlus5T"; then
   ui_print "- API version detected: $API"
   ui_print "- Copying modified libraries"
   ui_print " "
-  if [ $API -eq 25 ] || [ $API -eq 26 ] || [ $API -eq 27 ] || [ $API -eq 28 ]; then
+  if [ $API -eq 25 ]; then
     cp_ch $DUMPLIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
     cp_ch $DUMPLIB/$API/$IMX371 $VENLIB/$IMX371
+    cp_ch $DUMPLIB/$API/$IMX376K $VENLIB/$IMX376K
+    cp_ch $DUMPLIB/$API/$IMX398 $VENLIB/$IMX398
+  elif [ $API -eq 26 ] || [ $API -eq 27 ] || [ $API -eq 28 ]; then
+    cp_ch $DUMPLIB/$API/$MSM8998 $VENLIB/hw/$MSM8998
+    cp_ch $UNILIB/$API/$IMX371 $VENLIB/$IMX371
     cp_ch $DUMPLIB/$API/$IMX376K $VENLIB/$IMX376K
     cp_ch $DUMPLIB/$API/$IMX398 $VENLIB/$IMX398
   else
