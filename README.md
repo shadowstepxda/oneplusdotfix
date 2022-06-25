@@ -6,6 +6,10 @@ This module replaces the necessary camera libraries with modified ones which fix
 **Note:** The zip will abort the installation if you try to flash it on any other device except the OnePlus 5/5T and if you aren't running Android 7.1-11.0 (API 25-30).
 
 ## Changelog
+### v6.3
+- Added support for Android 12L and Android 13
+- Updated the base template to MMT-Ex v2.0
+
 ### v6.2
 - Fixed a mistake in the installation script
 

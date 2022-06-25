@@ -4,16 +4,16 @@
 #
 ##########################################################################################
 
+cleanup() {
+  rm -rf $MODPATH/common 2>/dev/null
+}
+
 abort() {
   ui_print "$1"
   rm -rf $MODPATH 2>/dev/null
   cleanup
   rm -rf $TMPDIR 2>/dev/null
   exit 1
-}
-
-cleanup() {
-  rm -rf $MODPATH/common 2>/dev/null
 }
 
 device_check() {
@@ -116,7 +116,7 @@ ui_print " "
 [ -z $MAXAPI ] || { [ $API -gt $MAXAPI ] && abort "! Your system API of $API is greater than the maximum api of $MAXAPI! Aborting!"; }
 
 # Set variables
-[ -z $ARCH32 ] && ARCH32=$(echo $ARCH | cut -c-3)
+[ -z $ARCH32 ] && ARCH32="$(echo $ABI32 | cut -c-3)"
 [ $API -lt 26 ] && DYNLIB=false
 [ -z $DYNLIB ] && DYNLIB=false
 [ -z $DEBUG ] && DEBUG=false
