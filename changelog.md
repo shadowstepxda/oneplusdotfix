@@ -1,3 +1,8 @@
+### v7.0
+- Updated base template to MMT-Ex v3.7
+- Removed minimum and maximum API restriction to future proof the module
+- Added volume key selection for users who only want to install front camera RAW fix
+
 ### v6.3
 - Added support for Android 12L and Android 13
 - Updated the base template to MMT-Ex v2.0
